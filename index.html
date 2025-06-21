@@ -1,0 +1,671 @@
+<html class="scroll-smooth" data-theme="light" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Portofolio Pribadi - Creative Developer &amp; Digital Artist
+  </title>
+  <meta content="Portofolio pribadi seorang creative developer, digital artist, dan AI enthusiast. Menampilkan skill, sertifikat, karya, dan kontak." name="description"/>
+  <link href="https://placehold.co/32x32/000000/00f0ff/png?text=PF" rel="icon" type="image/png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+   html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Custom scrollbar for dark mode */
+    body::-webkit-scrollbar {
+      width: 8px;
+    }
+    body::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    body::-webkit-scrollbar-thumb {
+      background-color: #00f0ff;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-black dark:bg-black dark:text-white transition-colors duration-500">
+  <header class="fixed top-0 left-0 w-full bg-white dark:bg-black shadow-md z-50">
+   <nav class="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between h-16">
+    <a class="text-2xl font-bold text-black dark:text-white tracking-wide" href="#beranda">
+     MyPortfolio
+    </a>
+    <ul class="hidden md:flex space-x-8 font-medium text-black dark:text-white">
+     <li>
+      <a class="hover:text-neon-blue transition-colors duration-300" href="#beranda">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-neon-blue transition-colors duration-300" href="#tentang">
+       Tentang Saya
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-neon-blue transition-colors duration-300" href="#skill">
+       Skill Matrix
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-neon-blue transition-colors duration-300" href="#sertifikat">
+       Sertifikat
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-neon-blue transition-colors duration-300" href="#karya">
+       Karya &amp; Project
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-neon-blue transition-colors duration-300" href="#kontak">
+       Kontak
+      </a>
+     </li>
+    </ul>
+    <button aria-label="Toggle Dark Mode" class="ml-4 p-2 rounded-md text-black dark:text-white hover:bg-neon-blue/20 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-neon-blue" id="darkModeToggle">
+     <i class="fas fa-moon">
+     </i>
+    </button>
+    <button aria-label="Toggle Menu" class="md:hidden ml-4 p-2 rounded-md text-black dark:text-white hover:bg-neon-blue/20 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-neon-blue" id="mobileMenuBtn">
+     <i class="fas fa-bars">
+     </i>
+    </button>
+   </nav>
+   <div class="md:hidden bg-white dark:bg-black shadow-md hidden" id="mobileMenu">
+    <ul class="flex flex-col space-y-4 p-6 font-medium text-black dark:text-white">
+     <li>
+      <a class="block hover:text-neon-blue transition-colors duration-300" href="#beranda">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-neon-blue transition-colors duration-300" href="#tentang">
+       Tentang Saya
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-neon-blue transition-colors duration-300" href="#skill">
+       Skill Matrix
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-neon-blue transition-colors duration-300" href="#sertifikat">
+       Sertifikat
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-neon-blue transition-colors duration-300" href="#karya">
+       Karya &amp; Project
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-neon-blue transition-colors duration-300" href="#kontak">
+       Kontak
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main class="pt-20 max-w-7xl mx-auto px-6 sm:px-8">
+   <!-- Beranda -->
+   <section class="min-h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up" id="beranda">
+    <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 tracking-tight text-black dark:text-white">
+     Nama Anda
+    </h1>
+    <p class="text-xl sm:text-2xl max-w-xl mb-8 text-gray-700 dark:text-gray-300">
+     Creative Developer, Digital Artist, dan AI Enthusiast
+    </p>
+    <div class="flex space-x-6">
+     <a class="px-6 py-3 rounded-md bg-neon-blue text-black font-semibold hover:bg-neon-blue/90 transition-colors duration-300 shadow-md" href="#kontak">
+      Hubungi Saya
+     </a>
+     <a class="px-6 py-3 rounded-md border-2 border-neon-blue text-neon-blue font-semibold hover:bg-neon-blue hover:text-black transition-colors duration-300 shadow-md flex items-center space-x-2" download="Resume_NamaAnda.pdf" href="https://drive.google.com/file/d/1Qu5hCL1Y3V5vhCEhZtZXbIwnGEjE-vKq/view?usp=drivesdk">
+      <i class="fas fa-download">
+      </i>
+      <span>
+       Download CV
+      </span>
+     </a>
+    </div>
+    <button aria-label="Scroll Down" class="mt-16 animate-bounce text-neon-blue text-3xl" id="scrollDownBtn">
+     <i class="fas fa-chevron-down">
+     </i>
+    </button>
+    <img alt="Ilustrasi seorang developer kreatif dengan laptop dan alat digital artist berwarna neon biru di latar hitam" class="mt-12 w-full max-w-md mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/94b6634c-bfbd-471d-7fc2-983a391078ea.jpg" width="400"/>
+   </section>
+   <!-- Tentang Saya -->
+   <section class="py-20" data-aos="fade-right" id="tentang">
+    <h2 class="text-4xl font-bold mb-8 text-center text-black dark:text-white">
+     Tentang Saya
+    </h2>
+    <div class="max-w-4xl mx-auto text-center text-gray-700 dark:text-gray-300 space-y-6">
+     <p>
+      Saya adalah seorang creative developer yang menggabungkan keahlian dalam pengembangan front-end, desain UI/UX, dan eksplorasi teknologi AI untuk menciptakan solusi digital yang inovatif dan estetis.
+     </p>
+     <div class="flex flex-col sm:flex-row justify-center gap-8 mt-8">
+      <div class="bg-neon-blue/10 dark:bg-neon-blue/20 rounded-lg p-6 flex-1 shadow-md">
+       <h3 class="text-2xl font-semibold mb-3 text-neon-blue">
+        Front-End Development
+       </h3>
+       <p>
+        Mahir dalam HTML, CSS, JavaScript, React, dan Vue untuk membangun antarmuka yang responsif dan interaktif.
+       </p>
+      </div>
+      <div class="bg-neon-blue/10 dark:bg-neon-blue/20 rounded-lg p-6 flex-1 shadow-md">
+       <h3 class="text-2xl font-semibold mb-3 text-neon-blue">
+        Prompt Engineering
+       </h3>
+       <p>
+        Berpengalaman dalam merancang prompt efektif untuk AI tools seperti ChatGPT, Midjourney, dan lainnya.
+       </p>
+      </div>
+      <div class="bg-neon-blue/10 dark:bg-neon-blue/20 rounded-lg p-6 flex-1 shadow-md">
+       <h3 class="text-2xl font-semibold mb-3 text-neon-blue">
+        UI/UX Design
+       </h3>
+       <p>
+        Mendesain pengalaman pengguna yang intuitif dan estetis dengan fokus pada usability dan aksesibilitas.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Skill Matrix -->
+   <section class="py-20 bg-gray-50 dark:bg-gray-900" data-aos="fade-left" id="skill">
+    <h2 class="text-4xl font-bold mb-12 text-center text-black dark:text-white">
+     Skill Matrix
+    </h2>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-12">
+     <!-- Bar Chart style skill -->
+     <div>
+      <h3 class="text-2xl font-semibold mb-6 text-neon-blue text-center">
+       HTML / CSS / JS
+      </h3>
+      <div class="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-6 overflow-hidden shadow-inner">
+       <div class="bg-neon-blue h-6 rounded-full" style="width: 95%;">
+       </div>
+      </div>
+      <p class="text-center mt-2 text-gray-700 dark:text-gray-300 font-semibold">
+       95%
+      </p>
+     </div>
+     <div>
+      <h3 class="text-2xl font-semibold mb-6 text-neon-blue text-center">
+       React / Vue
+      </h3>
+      <div class="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-6 overflow-hidden shadow-inner">
+       <div class="bg-neon-blue h-6 rounded-full" style="width: 85%;">
+       </div>
+      </div>
+      <p class="text-center mt-2 text-gray-700 dark:text-gray-300 font-semibold">
+       85%
+      </p>
+     </div>
+     <div>
+      <h3 class="text-2xl font-semibold mb-6 text-neon-blue text-center">
+       Prompt Engineering
+      </h3>
+      <div class="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-6 overflow-hidden shadow-inner">
+       <div class="bg-neon-blue h-6 rounded-full" style="width: 90%;">
+       </div>
+      </div>
+      <p class="text-center mt-2 text-gray-700 dark:text-gray-300 font-semibold">
+       90%
+      </p>
+     </div>
+     <div>
+      <h3 class="text-2xl font-semibold mb-6 text-neon-blue text-center">
+       UI/UX Design
+      </h3>
+      <div class="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-6 overflow-hidden shadow-inner">
+       <div class="bg-neon-blue h-6 rounded-full" style="width: 80%;">
+       </div>
+      </div>
+      <p class="text-center mt-2 text-gray-700 dark:text-gray-300 font-semibold">
+       80%
+      </p>
+     </div>
+     <div class="sm:col-span-2">
+      <h3 class="text-2xl font-semibold mb-6 text-neon-blue text-center">
+       Git &amp; Deployment
+      </h3>
+      <div class="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-6 overflow-hidden shadow-inner">
+       <div class="bg-neon-blue h-6 rounded-full" style="width: 88%;">
+       </div>
+      </div>
+      <p class="text-center mt-2 text-gray-700 dark:text-gray-300 font-semibold">
+       88%
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- Sertifikat -->
+   <section class="py-20" data-aos="fade-up" id="sertifikat">
+    <h2 class="text-4xl font-bold mb-12 text-center text-black dark:text-white">
+     Sertifikat
+    </h2>
+    <div class="max-w-7xl mx-auto">
+     <div class="flex justify-center mb-8 space-x-4 flex-wrap">
+      <button class="filter-btn px-4 py-2 rounded-md bg-neon-blue text-black font-semibold hover:bg-neon-blue/90 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-neon-blue" data-filter="all">
+       Semua
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-md border-2 border-neon-blue text-neon-blue font-semibold hover:bg-neon-blue hover:text-black transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-neon-blue" data-filter="frontend">
+       Front-End
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-md border-2 border-neon-blue text-neon-blue font-semibold hover:bg-neon-blue hover:text-black transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-neon-blue" data-filter="prompting">
+       Prompting
+      </button>
+      <button class="filter-btn px-4 py-2 rounded-md border-2 border-neon-blue text-neon-blue font-semibold hover:bg-neon-blue hover:text-black transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-neon-blue" data-filter="design">
+       Desain
+      </button>
+     </div>
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" id="sertifikatGrid">
+      <!-- Sertifikat 1 -->
+      <div aria-label="Sertifikat Front-End Development HTML CSS JS" class="sertifikat-item cursor-pointer rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-800" data-category="frontend" tabindex="0">
+       <img alt="Sertifikat Front-End Development dengan latar belakang hitam dan teks neon biru" class="w-full h-48 object-cover" height="280" src="https://storage.googleapis.com/a1aa/image/06bee2c0-c56b-4f22-3eef-4c99151bc740.jpg" width="400"/>
+       <div class="p-4">
+        <h3 class="font-semibold text-lg text-black dark:text-white">
+         Front-End Development
+        </h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
+         HTML, CSS, JavaScript
+        </p>
+        <a aria-label="Download Sertifikat Front-End Development PDF" class="inline-block mt-3 text-neon-blue font-semibold hover:underline" download="Sertifikat_FrontEnd.pdf" href="https://placehold.co/sertifikat-frontend.pdf">
+         Download PDF
+        </a>
+       </div>
+      </div>
+      <!-- Sertifikat 2 -->
+      <div aria-label="Sertifikat Prompt Engineering AI Tools" class="sertifikat-item cursor-pointer rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-800" data-category="prompting" tabindex="0">
+       <img alt="Sertifikat Prompt Engineering dengan latar belakang hitam dan teks neon biru" class="w-full h-48 object-cover" height="280" src="https://storage.googleapis.com/a1aa/image/42c9386d-00a9-463c-958c-c8ac74bd6810.jpg" width="400"/>
+       <div class="p-4">
+        <h3 class="font-semibold text-lg text-black dark:text-white">
+         Prompt Engineering
+        </h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
+         AI Tools: ChatGPT, Midjourney
+        </p>
+        <a aria-label="Download Sertifikat Prompt Engineering PDF" class="inline-block mt-3 text-neon-blue font-semibold hover:underline" download="Sertifikat_PromptEngineering.pdf" href="https://placehold.co/sertifikat-prompting.pdf">
+         Download PDF
+        </a>
+       </div>
+      </div>
+      <!-- Sertifikat 3 -->
+      <div aria-label="Sertifikat UI UX Design" class="sertifikat-item cursor-pointer rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-800" data-category="design" tabindex="0">
+       <img alt="Sertifikat UI UX Design dengan latar belakang hitam dan teks neon biru" class="w-full h-48 object-cover" height="280" src="https://storage.googleapis.com/a1aa/image/74979d0d-5c88-4b62-d6d2-8e0559f90b11.jpg" width="400"/>
+       <div class="p-4">
+        <h3 class="font-semibold text-lg text-black dark:text-white">
+         UI/UX Design
+        </h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
+         Desain Pengalaman Pengguna
+        </p>
+        <a aria-label="Download Sertifikat UI UX Design PDF" class="inline-block mt-3 text-neon-blue font-semibold hover:underline" download="Sertifikat_UIUXDesign.pdf" href="https://placehold.co/sertifikat-uiux.pdf">
+         Download PDF
+        </a>
+       </div>
+      </div>
+      <!-- Sertifikat 4 -->
+      <div aria-label="Sertifikat React dan Vue" class="sertifikat-item cursor-pointer rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-800" data-category="frontend" tabindex="0">
+       <img alt="Sertifikat React dan Vue dengan latar belakang hitam dan teks neon biru" class="w-full h-48 object-cover" height="280" src="https://storage.googleapis.com/a1aa/image/642c06bd-fe40-4820-d09f-ffb0079a860c.jpg" width="400"/>
+       <div class="p-4">
+        <h3 class="font-semibold text-lg text-black dark:text-white">
+         React &amp; Vue
+        </h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
+         Framework Front-End Modern
+        </p>
+        <a aria-label="Download Sertifikat React dan Vue PDF" class="inline-block mt-3 text-neon-blue font-semibold hover:underline" download="Sertifikat_ReactVue.pdf" href="https://placehold.co/sertifikat-reactvue.pdf">
+         Download PDF
+        </a>
+       </div>
+      </div>
+      <!-- Sertifikat 5 -->
+      <div aria-label="Sertifikat Midjourney AI Art" class="sertifikat-item cursor-pointer rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-800" data-category="prompting" tabindex="0">
+       <img alt="Sertifikat Midjourney AI Art dengan latar belakang hitam dan teks neon biru" class="w-full h-48 object-cover" height="280" src="https://storage.googleapis.com/a1aa/image/517d50b7-497c-4656-00c1-c8df8cdacde7.jpg" width="400"/>
+       <div class="p-4">
+        <h3 class="font-semibold text-lg text-black dark:text-white">
+         Midjourney AI Art
+        </h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
+         Digital Art dengan AI
+        </p>
+        <a aria-label="Download Sertifikat Midjourney AI Art PDF" class="inline-block mt-3 text-neon-blue font-semibold hover:underline" download="Sertifikat_MidjourneyAI.pdf" href="https://placehold.co/sertifikat-midjourney.pdf">
+         Download PDF
+        </a>
+       </div>
+      </div>
+      <!-- Sertifikat 6 -->
+      <div aria-label="Sertifikat Graphic Design" class="sertifikat-item cursor-pointer rounded-lg shadow-lg overflow-hidden bg-white dark:bg-gray-800" data-category="design" tabindex="0">
+       <img alt="Sertifikat Graphic Design dengan latar belakang hitam dan teks neon biru" class="w-full h-48 object-cover" height="280" src="https://storage.googleapis.com/a1aa/image/ea351298-058a-4206-c010-88ead14a9551.jpg" width="400"/>
+       <div class="p-4">
+        <h3 class="font-semibold text-lg text-black dark:text-white">
+         Graphic Design
+        </h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
+         Desain Grafis Digital
+        </p>
+        <a aria-label="Download Sertifikat Graphic Design PDF" class="inline-block mt-3 text-neon-blue font-semibold hover:underline" download="Sertifikat_GraphicDesign.pdf" href="https://placehold.co/sertifikat-graphicdesign.pdf">
+         Download PDF
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Karya & Project -->
+   <section class="py-20 bg-gray-50 dark:bg-gray-900" data-aos="fade-up" id="karya">
+    <h2 class="text-4xl font-bold mb-12 text-center text-black dark:text-white">
+     Karya &amp; Project
+    </h2>
+    <div class="max-w-7xl mx-auto space-y-16">
+     <!-- Web Publikasi -->
+     <div>
+      <h3 class="text-3xl font-semibold mb-8 text-neon-blue text-center">
+       Web Publikasi
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+       <article class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col">
+        <img alt="Tampilan depan website portofolio dengan desain modern minimalis berwarna hitam dan neon biru" class="w-full h-48 object-cover" height="350" src="https://storage.googleapis.com/a1aa/image/eb78420d-d182-41cd-9bff-5ecdedcc5d50.jpg" width="600"/>
+        <div class="p-6 flex flex-col flex-grow">
+         <h4 class="text-xl font-semibold mb-2 text-black dark:text-white">
+          Portofolio Pribadi
+         </h4>
+         <p class="text-gray-700 dark:text-gray-300 flex-grow">
+          Website portofolio pribadi dengan desain minimalis, menampilkan karya dan skill secara interaktif.
+         </p>
+         <a aria-label="Live preview Portofolio Pribadi" class="mt-4 inline-block text-neon-blue font-semibold hover:underline" href="https://example-portfolio1.com" rel="noopener" target="_blank">
+          Live Preview
+         </a>
+        </div>
+       </article>
+       <article class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col">
+        <img alt="Tampilan depan website e-commerce dengan tema gelap dan aksen neon biru" class="w-full h-48 object-cover" height="350" src="https://storage.googleapis.com/a1aa/image/b1cc8b1e-2dc8-4086-91c6-5bb139bdf84d.jpg" width="600"/>
+        <div class="p-6 flex flex-col flex-grow">
+         <h4 class="text-xl font-semibold mb-2 text-black dark:text-white">
+          Website E-Commerce
+         </h4>
+         <p class="text-gray-700 dark:text-gray-300 flex-grow">
+          Platform jual beli online dengan fitur lengkap dan UI yang responsif.
+         </p>
+         <a aria-label="Live preview Website E-Commerce" class="mt-4 inline-block text-neon-blue font-semibold hover:underline" href="https://example-ecommerce.com" rel="noopener" target="_blank">
+          Live Preview
+         </a>
+        </div>
+       </article>
+       <article class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col">
+        <img alt="Tampilan depan website blog teknologi dengan desain modern dan warna neon biru" class="w-full h-48 object-cover" height="350" src="https://storage.googleapis.com/a1aa/image/4d9388f1-2b10-40f9-5bb6-cac404258a6e.jpg" width="600"/>
+        <div class="p-6 flex flex-col flex-grow">
+         <h4 class="text-xl font-semibold mb-2 text-black dark:text-white">
+          Blog Teknologi
+         </h4>
+         <p class="text-gray-700 dark:text-gray-300 flex-grow">
+          Blog yang membahas tren teknologi terbaru dan tutorial pengembangan web.
+         </p>
+         <a aria-label="Live preview Blog Teknologi" class="mt-4 inline-block text-neon-blue font-semibold hover:underline" href="https://example-blogtech.com" rel="noopener" target="_blank">
+          Live Preview
+         </a>
+        </div>
+       </article>
+      </div>
+     </div>
+     <!-- Karya Digital -->
+     <div>
+      <h3 class="text-3xl font-semibold mb-8 text-neon-blue text-center">
+       Karya Digital
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+       <div aria-label="Logo minimalis dengan warna neon biru di latar hitam" class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer group" tabindex="0">
+        <img alt="Logo minimalis berwarna neon biru dengan latar belakang hitam" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/fed04ef0-9320-4031-1b9b-2f53a0409ea2.jpg" width="400"/>
+        <div class="p-4">
+         <h4 class="font-semibold text-black dark:text-white">
+          Logo Minimalis
+         </h4>
+        </div>
+       </div>
+       <div aria-label="Banner promosi digital dengan tema neon biru dan hitam" class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer group" tabindex="0">
+        <img alt="Banner promosi digital dengan warna neon biru dan latar hitam" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/ab21adb3-28cf-4278-8a05-8bf01bf47e97.jpg" width="400"/>
+        <div class="p-4">
+         <h4 class="font-semibold text-black dark:text-white">
+          Banner Promosi
+         </h4>
+        </div>
+       </div>
+       <div aria-label="Mockup aplikasi mobile dengan desain modern neon biru" class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer group" tabindex="0">
+        <img alt="Mockup aplikasi mobile dengan desain modern berwarna neon biru dan latar hitam" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/a858a0cb-1a38-4f28-72d4-b4b5d74db99c.jpg" width="400"/>
+        <div class="p-4">
+         <h4 class="font-semibold text-black dark:text-white">
+          Mockup Aplikasi Mobile
+         </h4>
+        </div>
+       </div>
+       <div aria-label="Desain digital poster event dengan warna neon biru dan hitam" class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer group" tabindex="0">
+        <img alt="Desain digital poster event dengan warna neon biru dan latar hitam" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/021b325a-7183-446f-d1c3-dea9b91a42b8.jpg" width="400"/>
+        <div class="p-4">
+         <h4 class="font-semibold text-black dark:text-white">
+          Desain Digital Poster
+         </h4>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Kontak -->
+   <section class="py-20" data-aos="fade-up" id="kontak">
+    <h2 class="text-4xl font-bold mb-12 text-center text-black dark:text-white">
+     Kontak
+    </h2>
+    <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+     <form class="space-y-6" id="contactForm" novalidate="">
+      <div>
+       <label class="block mb-2 font-semibold text-black dark:text-white" for="name">
+        Nama
+       </label>
+       <input class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-neon-blue" id="name" name="name" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block mb-2 font-semibold text-black dark:text-white" for="email">
+        Email
+       </label>
+       <input class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-neon-blue" id="email" name="email" required="" type="email"/>
+      </div>
+      <div>
+       <label class="block mb-2 font-semibold text-black dark:text-white" for="message">
+        Pesan
+       </label>
+       <textarea class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-neon-blue" id="message" name="message" required="" rows="4"></textarea>
+      </div>
+      <button class="w-full py-3 bg-neon-blue text-black font-semibold rounded-md hover:bg-neon-blue/90 transition-colors duration-300 shadow-md" type="submit">
+       Kirim Pesan
+      </button>
+     </form>
+     <div class="mt-10 flex justify-center space-x-8 text-3xl text-neon-blue">
+      <a aria-label="LinkedIn" class="hover:text-neon-blue/80 transition-colors duration-300" href="https://www.linkedin.com/in/nanang-nurmansah-b50696322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" rel="noopener" target="_blank">
+       <i class="fab fa-linkedin">
+       </i>
+      </a>
+      <a aria-label="GitHub" class="hover:text-neon-blue/80 transition-colors duration-300" href="https://github.com/AMillionDriver" rel="noopener" target="_blank">
+       <i class="fab fa-github">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="hover:text-neon-blue/80 transition-colors duration-300" href="https://instagram.com/nanang_788" rel="noopener" target="_blank">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a aria-label="Email" class="hover:text-neon-blue/80 transition-colors duration-300" href="nanangnurmansah5@gmail.com">
+       <i class="fas fa-envelope">
+       </i>
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Modal Sertifikat -->
+  <div aria-describedby="modalDesc" aria-labelledby="modalTitle" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 hidden z-50" id="modal" role="dialog">
+   <div class="bg-white dark:bg-gray-900 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-auto relative shadow-lg">
+    <button aria-label="Close modal" class="absolute top-4 right-4 text-black dark:text-white text-2xl hover:text-neon-blue transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-neon-blue" id="modalCloseBtn">
+     <i class="fas fa-times">
+     </i>
+    </button>
+    <img alt="" class="w-full object-contain rounded-t-lg" id="modalImg" src=""/>
+    <div class="p-6 text-center">
+     <a aria-label="Download sertifikat PDF" class="inline-block px-6 py-3 bg-neon-blue text-black font-semibold rounded-md hover:bg-neon-blue/90 transition-colors duration-300 shadow-md" download="" href="#" id="modalDownloadLink">
+      Download PDF
+     </a>
+    </div>
+   </div>
+  </div>
+  <script>
+   // Define neon blue color for Tailwind usage
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neon-blue': '#00f0ff',
+          }
+        }
+      }
+    };
+
+    // Dark mode toggle
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const htmlEl = document.documentElement;
+    const icon = darkModeToggle.querySelector('i');
+
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        htmlEl.classList.add('dark');
+        htmlEl.setAttribute('data-theme', 'dark');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        htmlEl.classList.remove('dark');
+        htmlEl.setAttribute('data-theme', 'light');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+      if (htmlEl.classList.contains('dark')) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    });
+
+    // Load theme from localStorage or system preference
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setTheme(prefersDark ? 'dark' : 'light');
+      }
+    })();
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Scroll down button
+    const scrollDownBtn = document.getElementById('scrollDownBtn');
+    scrollDownBtn.addEventListener('click', () => {
+      const aboutSection = document.getElementById('tentang');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Sertifikat filter
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const sertifikatItems = document.querySelectorAll('.sertifikat-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-neon-blue', 'text-black');
+          b.classList.add('border-2', 'border-neon-blue', 'text-neon-blue');
+        });
+        btn.classList.add('bg-neon-blue', 'text-black');
+        btn.classList.remove('border-2', 'border-neon-blue', 'text-neon-blue');
+
+        const filter = btn.getAttribute('data-filter');
+        sertifikatItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Modal sertifikat
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    const modalDownloadLink = document.getElementById('modalDownloadLink');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+    sertifikatItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const downloadLink = item.querySelector('a[download]');
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        modalDownloadLink.href = downloadLink.href;
+        modalDownloadLink.setAttribute('download', downloadLink.getAttribute('download'));
+        modal.classList.remove('hidden');
+        modalCloseBtn.focus();
+      });
+      item.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          item.click();
+        }
+      });
+    });
+
+    modalCloseBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+
+    // Contact form submission (dummy)
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Terima kasih atas pesan Anda! Saya akan segera menghubungi Anda.');
+      contactForm.reset();
+    });
+
+    // Initialize AOS
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  </script>
+ </body>
+</html>
